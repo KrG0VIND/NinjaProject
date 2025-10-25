@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complaints | Campus Connect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛠 Complaints & Requests</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="notices.html">Notices</a>
+      <a href="complaints.html">Complaints</a>
+      <a href="timetable.html">Timetable</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="two-col">
+      <div class="panel">
+        <h2>Submit a Complaint / Request</h2>
+        <form id="complaintForm">
+          <input type="text" id="complainantName" placeholder="Your name (optional)" />
+          <select id="complaintCategory" required>
+            <option value="" disabled selected>Choose category</option>
+            <option>Hostel</option>
+            <option>Academics</option>
+            <option>IT / Network</option>
+            <option>Maintenance</option>
+            <option>Food</option>
+            <option>Other</option>
+          </select>
+
+          <select id="complaintPriority" required>
+            <option value="" disabled selected>Priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+
+          <textarea id="complaintDesc" rows="4" placeholder="Describe the issue..." required></textarea>
+
+          <button type="submit">Submit Complaint</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>Filter & Search</h2>
+        <div class="filters">
+          <select id="filterCategory">
+            <option value="All">All categories</option>
+            <option>Hostel</option>
+            <option>Academics</option>
+            <option>IT / Network</option>
+            <option>Maintenance</option>
+            <option>Food</option>
+            <option>Other</option>
+          </select>
+
+          <select id="filterStatus">
+            <option value="All">All statuses</option>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Resolved">Resolved</option>
+          </select>
+
+          <input type="text" id="searchInput" placeholder="Search title/desc/name..." />
+          <button id="clearFilters">Clear</button>
+        </div>
+
+        <h3 style="margin-top:12px">Active Complaints</h3>
+        <div id="complaintList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Campus Connect</footer>
+
+  <script src="js/complaints.js"></script>
+</body>
+</html>

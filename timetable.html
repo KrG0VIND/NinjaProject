@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable | Campus Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>📅 Timetable & Attendance</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="notices.html">Notices</a>
+      <a href="complaints.html">Complaints</a>
+      <a href="timetable.html">Timetable</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Weekly Timetable</h2>
+
+    <div class="timetable-container">
+      <table id="timetable">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>9:00–10:00</th>
+            <th>10:00–11:00</th>
+            <th>11:00–12:00</th>
+            <th>12:00–1:00</th>
+            <th>2:00–3:00</th>
+            <th>3:00–4:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday</td><td>Maths</td><td>Physics</td><td>Break</td><td>Chemistry</td><td>Lab</td><td>Sports</td></tr>
+          <tr><td>Tuesday</td><td>English</td><td>Maths</td><td>Break</td><td>Electronics</td><td>Lab</td><td>Library</td></tr>
+          <tr><td>Wednesday</td><td>Maths</td><td>Physics</td><td>Break</td><td>Chemistry</td><td>Lab</td><td>Sports</td></tr>
+          <tr><td>Thursday</td><td>English</td><td>Maths</td><td>Break</td><td>Electronics</td><td>Lab</td><td>Library</td></tr>
+          <tr><td>Friday</td><td>Maths</td><td>Physics</td><td>Break</td><td>Chemistry</td><td>Lab</td><td>Sports</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr style="margin:30px 0">
+
+    <section class="attendance-section">
+      <h2>Attendance Tracker</h2>
+      <form id="attendanceForm">
+        <input type="text" id="subject" placeholder="Subject Name" required>
+        <select id="status" required>
+          <option value="" disabled selected>Select Status</option>
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+        </select>
+        <button type="submit">Mark Attendance</button>
+      </form>
+
+      <h3>Attendance Summary</h3>
+      <table id="attendanceTable">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Present</th>
+            <th>Total Classes</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>© 2025 Campus Connect</footer>
+  <script src="js/timetable.js"></script>
+</body>
+</html>

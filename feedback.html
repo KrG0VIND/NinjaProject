@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | Campus Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>💬 Feedback & Suggestions</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="notices.html">Notices</a>
+      <a href="complaints.html">Complaints</a>
+      <a href="timetable.html">Timetable</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="feedback-section">
+      <h2>Share Your Feedback</h2>
+
+      <form id="feedbackForm">
+        <input type="text" id="name" placeholder="Your Name (optional)">
+        <select id="category" required>
+          <option value="" disabled selected>Select Category</option>
+          <option value="Academics">Academics</option>
+          <option value="Hostel">Hostel</option>
+          <option value="Canteen">Canteen</option>
+          <option value="Events">Events</option>
+          <option value="Other">Other</option>
+        </select>
+        <textarea id="message" rows="4" placeholder="Enter your feedback..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <h3>Submitted Feedback</h3>
+      <div id="feedbackList" class="feedback-list"></div>
+    </section>
+  </main>
+
+  <footer>© 2025 Campus Connect</footer>
+
+  <script src="js/feedback.js"></script>
+</body>
+</html>

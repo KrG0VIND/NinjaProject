@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notices | Campus Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>📢 Notices & Events</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="notices.html">Notices</a>
+      <a href="complaints.html">Complaints</a>
+      <a href="timetable.html">Timetable</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Add New Notice</h2>
+    <form id="noticeForm">
+      <input type="text" id="noticeTitle" placeholder="Enter title" required>
+      <textarea id="noticeDesc" placeholder="Enter description" required></textarea>
+      <button type="submit">Post Notice</button>
+    </form>
+
+    <h2>All Notices</h2>
+    <div id="noticeList"></div>
+  </main>
+
+  <footer>© 2025 Campus Connect</footer>
+  <script src="js/notices.js"></script>
+</body>
+</html>
